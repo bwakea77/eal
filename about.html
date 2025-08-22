@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About EA Logistics Co. | Our Story & Mission</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header (Using the new dropdown version) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900"><a href="index.html">EA Logistics</a></div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-blue-600 font-semibold">About Us</a>
+                <div class="relative">
+                    <a href="#" id="services-dropdown-button" class="text-gray-600 hover:text-blue-600 flex items-center">
+                        Services
+                        <svg id="services-dropdown-icon" class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <div id="services-dropdown-menu" class="absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-60">
+                        <a href="services-road.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Road Transportation</a>
+                        <a href="services-warehousing.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Warehousing & Distribution</a>
+                        <a href="services-supplychain.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Supply Chain Management</a>
+                    </div>
+                </div>
+                <a href="industries.html" class="text-gray-600 hover:text-blue-600">Industries We Serve</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact Us</a>
+            </div>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-600 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+             <!-- Mobile menu links... -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gray-100">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">Delivering Excellence Across Tanzania</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mt-4">Learn about our journey, our values, and the people who make it all happen.</p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x450/334155/ffffff?text=Our+Team+in+Action" alt="EA Logistics team collaborating" class="rounded-lg shadow-2xl w-full">
+                </div>
+                <div class="text-lg">
+                    <h2 class="text-3xl font-bold mb-4">Our Story</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        EA Logistics Co. is a supply chain management company in Tanzania, founded on the principle of delivering excellence. We are experts in managing the complete flow of goods and services—from the initial raw components all the way to the final consumer delivery.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        With a strong corporate presence in Dar es Salaam, we are on a strategic path of expansion to serve the entire nation of Tanzania. Our core philosophy is built on creating win-win strategies that help our clients thrive.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Cards -->
+        <section class="bg-gray-50 py-20">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10">
+                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-600">
+                    <h3 class="text-2xl font-bold mb-3">Our Mission</h3>
+                    <p class="text-gray-600 text-lg">To deliver our customer's product and meet the expectation of on-time, quality service at an optimum cost through ideal supply chain solutions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-gray-800">
+                    <h3 class="text-2xl font-bold mb-3">Our Vision</h3>
+                    <p class="text-gray-600 text-lg">To be a technology-driven supply chain company focused on meeting our customer's demand at any point in time.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- **NEW** Our Values Section (Placeholder) -->
+        <section class="py-20 text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12">The Principles That Drive Us</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-6">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-handshake fa-3x"></i></div>
+                        <h4 class="text-xl font-semibold mb-2">Integrity</h4>
+                        <p class="text-gray-600">**PLACEHOLDER:** Briefly describe your commitment to honesty and transparency in all dealings.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-lightbulb fa-3x"></i></div>
+                        <h4 class="text-xl font-semibold mb-2">Innovation</h4>
+                        <p class="text-gray-600">**PLACEHOLDER:** Explain how you leverage technology and new ideas to improve services.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-users fa-3x"></i></div>
+                        <h4 class="text-xl font-semibold mb-2">Customer-Centric</h4>
+                        <p class="text-gray-600">**PLACEHOLDER:** Detail your focus on understanding and meeting client needs above all else.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-shield-alt fa-3x"></i></div>
+                        <h4 class="text-xl font-semibold mb-2">Reliability</h4>
+                        <p class="text-gray-600">**PLACEHOLDER:** Describe your dedication to being a dependable partner, delivering on promises every time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- **NEW** Meet the Team Section (Placeholder) -->
+        <section class="bg-gray-100 py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Meet Our Leadership</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-12">The experienced team dedicated to optimizing your supply chain.</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://placehold.co/200x200/E2E8F0/4A5568?text=Photo" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h4 class="text-xl font-bold">**[Full Name]**</h4>
+                        <p class="text-gray-500 mb-2">**[Job Title e.g., CEO & Founder]**</p>
+                        <p class="text-gray-600 text-sm">**PLACEHOLDER:** A short bio about their experience and role in the company.</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://placehold.co/200x200/E2E8F0/4A5568?text=Photo" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h4 class="text-xl font-bold">**[Full Name]**</h4>
+                        <p class="text-gray-500 mb-2">**[Job Title e.g., Head of Operations]**</p>
+                        <p class="text-gray-600 text-sm">**PLACEHOLDER:** A short bio about their experience and role in the company.</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <img src="https://placehold.co/200x200/E2E8F0/4A5568?text=Photo" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                        <h4 class="text-xl font-bold">**[Full Name]**</h4>
+                        <p class="text-gray-500 mb-2">**[Job Title e.g., Lead Strategist]**</p>
+                        <p class="text-gray-600 text-sm">**PLACEHOLDER:** A short bio about their experience and role in the company.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 EA Logistics Co. All rights reserved.</p>
+                <div class="flex mt-4 md:mt-0 space-x-6"><a href="#" class="hover:text-blue-400">Privacy Policy</a><a href="#" class="hover:text-blue-400">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

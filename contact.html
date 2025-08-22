@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EA Logistics Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon Library for contact details -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header (Using the new dropdown version) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900"><a href="index.html">EA Logistics</a></div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <div class="relative">
+                    <a href="#" id="services-dropdown-button" class="text-gray-600 hover:text-blue-600 transition duration-300 flex items-center">
+                        Services
+                        <svg id="services-dropdown-icon" class="w-4 h-4 ml-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <div id="services-dropdown-menu" class="absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-60">
+                        <a href="services-road.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Road Transportation</a>
+                        <a href="services-warehousing.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Warehousing & Distribution</a>
+                        <a href="services-supplychain.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Supply Chain Management</a>
+                    </div>
+                </div>
+                <a href="industries.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Industries We Serve</a>
+                <a href="contact.html" class="text-blue-600 font-semibold transition duration-300">Contact Us</a>
+            </div>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-600 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+             <!-- Mobile menu links... -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-white pt-16 pb-12">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Get in Touch</h1>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">We are ready to help. Fill out the form below for a free quote or contact us directly.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                    <!-- Left Column: Contact Details & Map -->
+                    <div class="space-y-12">
+                        <!-- Contact Details -->
+                        <div>
+                             <h3 class="text-3xl font-bold mb-6 text-gray-800">Contact Details</h3>
+                             <div class="space-y-4">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-blue-100 text-blue-600 p-3 rounded-full mt-1"><i class="fas fa-map-marker-alt w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold text-lg">Corporate Office</h4>
+                                        <p class="text-gray-600">Bunju B, Block 14 Kilimani Close, Dar es Salaam</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-blue-100 text-blue-600 p-3 rounded-full mt-1"><i class="fas fa-phone-alt w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold text-lg">Phone</h4>
+                                        <p class="text-gray-600">Not yet given</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-blue-100 text-blue-600 p-3 rounded-full mt-1"><i class="fas fa-envelope w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold text-lg">Email</h4>
+                                        <p class="text-gray-600"><a href="mailto:hello@eafods.com" class="hover:underline">hello@eafods.com</a></p>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                        <!-- Map -->
+                        <div>
+                            <h3 class="text-3xl font-bold mb-6 text-gray-800">Our Location</h3>
+                            <div class="rounded-lg shadow-lg overflow-hidden">
+                                <iframe src="https://maps.google.com/maps?q=Bunju%20B,%20Block%2014%20Kilimani%20Close,%20Dar%20es%20Salaam&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Contact Form -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-3xl font-bold mb-6 text-gray-800">Send us a message</h3>
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="company-name" class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
+                                <input type="text" name="company-name" id="company-name" class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Your Company Inc.">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" name="email" id="email" required class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="you@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="+255 123 456 789">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service of Interest</label>
+                                <select id="service" name="service" class="block w-full px-4 py-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                    <option>General Inquiry</option>
+                                    <option>Road Transportation</option>
+                                    <option>Warehousing</option>
+                                    <option>Supply Chain Management</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="How can we help you?"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                                    Submit Request
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 EA Logistics Co. All rights reserved.</p>
+                <div class="flex mt-4 md:mt-0 space-x-6"><a href="#" class="hover:text-blue-400">Privacy Policy</a><a href="#" class="hover:text-blue-400">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

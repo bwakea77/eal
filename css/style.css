@@ -1,0 +1,10 @@
+/* css/style.css */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/334155/ffffff?text=EA+Logistics+Fleet');
+    background-size: cover;
+    background-position: center;
+}

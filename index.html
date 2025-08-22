@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA Logistics - On-Time, Cost-Effective Logistics in Tanzania</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header (Using the new dropdown version) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900"><a href="index.html">EA Logistics</a></div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-blue-600 font-semibold">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About Us</a>
+                <div class="relative">
+                    <a href="#" id="services-dropdown-button" class="text-gray-600 hover:text-blue-600 flex items-center">
+                        Services
+                        <svg id="services-dropdown-icon" class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <div id="services-dropdown-menu" class="absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-60">
+                        <a href="services-road.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Road Transportation</a>
+                        <a href="services-warehousing.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Warehousing & Distribution</a>
+                        <a href="services-supplychain.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50">Supply Chain Management</a>
+                    </div>
+                </div>
+                <a href="industries.html" class="text-gray-600 hover:text-blue-600">Industries We Serve</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact Us</a>
+            </div>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-gray-600 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+             <!-- Mobile menu links... -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-white relative">
+            <div class="container mx-auto px-6 py-32 md:py-48 flex flex-col items-start text-left">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Your Partner for On-Time, Cost-Effective Logistics</h1>
+                    <p class="text-lg md:text-xl text-gray-200 mb-8">We deliver comprehensive supply chain solutions across Tanzania, ensuring your goods arrive with quality, on time, and at an optimal cost.</p>
+                    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 inline-block transform hover:scale-105">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Our Integrated Logistics Services</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">We manage all of our clients' logistics needs, from transportation to warehousing and complete supply chain management.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-truck fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Road Transportation</h3>
+                        <p class="text-gray-600 mb-4">With a modern fleet of 58 trucks, we offer versatile and reliable transportation for both inbound and outbound logistics.</p>
+                        <a href="services-road.html" class="text-blue-600 font-semibold hover:underline">Explore Our Fleet &rarr;</a>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-warehouse fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Warehousing & Distribution</h3>
+                        <p class="text-gray-600 mb-4">We provide secure, flexible storage solutions with exclusive and shared warehouses to optimize your inventory.</p>
+                        <a href="services-warehousing.html" class="text-blue-600 font-semibold hover:underline">Discover Our Warehouses &rarr;</a>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-cogs fa-3x"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Supply Chain Management</h3>
+                        <p class="text-gray-600 mb-4">We manage your entire supply chain, from sourcing components to final delivery, maximizing quality and profit.</p>
+                        <a href="services-supplychain.html" class="text-blue-600 font-semibold hover:underline">Optimize Your Supply Chain &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us? Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+                <div class="pr-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">The EA Logistics Advantage</h2>
+                    <p class="text-gray-600 text-lg mb-8">We combine modern technology with a client-focused approach to deliver results you can count on, every single time.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4"><i class="fas fa-microchip"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-xl">Technology Driven</h4>
+                                <p class="text-gray-600">We use the latest technology for precision execution and real-time visibility.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4"><i class="fas fa-bullseye"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-xl">End-Result Focused</h4>
+                                <p class="text-gray-600">Your targets are our primary goal. We drive every task to completion as committed.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4"><i class="fas fa-handshake"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-xl">Win-Win Strategy</h4>
+                                <p class="text-gray-600">We deliver quality service and meet timelines at an optimum cost for our customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x500/E2E8F0/4A5568?text=Logistics+in+Motion" alt="Logistics operations" class="rounded-lg shadow-2xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Trust Section -->
+        <section class="py-20 bg-gray-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Trusted by Industry Leaders</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">We are proud to partner with companies that are shaping the future of their industries.</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 mt-10">
+                    <img src="https://placehold.co/150x80/9CA3AF/FFFFFF?text=Client+A" alt="Client Logo 1" class="h-10 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://placehold.co/150x80/9CA3AF/FFFFFF?text=Client+B" alt="Client Logo 2" class="h-10 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://placehold.co/150x80/9CA3AF/FFFFFF?text=Client+C" alt="Client Logo 3" class="h-10 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://placehold.co/150x80/9CA3AF/FFFFFF?text=Client+D" alt="Client Logo 4" class="h-10 opacity-60 hover:opacity-100 transition duration-300">
+                    <img src="https://placehold.co/150x80/9CA3AF/FFFFFF?text=Client+E" alt="Client Logo 5" class="h-10 opacity-60 hover:opacity-100 transition duration-300">
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Build a Smarter Supply Chain?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">Contact our experts today to discuss a solution that meets your specific goals.</p>
+                <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition duration-300 inline-block transform hover:scale-105">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 EA Logistics Co. All rights reserved.</p>
+                <div class="flex mt-4 md:mt-0 space-x-6"><a href="#" class="hover:text-blue-400">Privacy Policy</a><a href="#" class="hover:text-blue-400">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
