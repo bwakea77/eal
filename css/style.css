@@ -10,3 +10,17 @@ body { font-family: 'Outfit', sans-serif; background-color: #ffffff; font-size: 
 .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out; }
 .accordion-button .accordion-icon { transition: transform 0.3s ease; }
 .accordion-button.active .accordion-icon { transform: rotate(135deg); }
+
+/* Responsive fix for Industries section */
+@media (max-width: 767px) {
+    #industries .bg-gray-100 {
+        padding: 1.5rem; /* Reduces padding on smaller screens */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #industries h3 {
+        font-size: 1rem; /* Reduces font size on smaller screens */
+        line-height: 1.5rem;
+    }
+}
