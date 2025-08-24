@@ -1,10 +1,12 @@
-/* css/style.css */
-body {
-    font-family: 'Inter', sans-serif;
-}
-
+body { font-family: 'Outfit', sans-serif; background-color: #ffffff; }
 .hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/334155/ffffff?text=EA+Logistics+Fleet');
+    background: linear-gradient(rgba(130, 81, 159, 0.85), rgba(130, 81, 159, 0.85)), url('https://placehold.co/1920x1080/475569/FFFFFF?text=EA+Logistics+Fleet') no-repeat center center;
     background-size: cover;
-    background-position: center;
 }
+#header { transition: all 0.3s ease-in-out; }
+.nav-link.active { color: #f8a41e; font-weight: 600; }
+.slider-dot { transition: background-color 0.3s ease; }
+.slider-dot.active { background-color: #f8a41e; }
+.accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out; }
+.accordion-button .accordion-icon { transition: transform 0.3s ease; }
+.accordion-button.active .accordion-icon { transform: rotate(135deg); }
