@@ -1,4 +1,4 @@
-body { font-family: 'Outfit', sans-serif; background-color: #ffffff; }
+body { font-family: 'Outfit', sans-serif; background-color: #ffffff; font-size: 17px; }
 .hero-section {
     background: linear-gradient(rgba(130, 81, 159, 0.85), rgba(130, 81, 159, 0.85)), url('https://placehold.co/1920x1080/475569/FFFFFF?text=EA+Logistics+Fleet') no-repeat center center;
     background-size: cover;
